@@ -31170,6 +31170,42 @@ video {
   }
 }
 
+@-webkit-keyframes blob {
+  0% {
+    transform: scale(1);
+  }
+
+  33% {
+    transform: scale(1.1);
+  }
+
+  66% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: scale(1);
+  }
+
+  33% {
+    transform: scale(1.1);
+  }
+
+  66% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .animate-none {
   -webkit-animation: none;
           animation: none;
@@ -31193,6 +31229,11 @@ video {
 .animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.animate-blob {
+  -webkit-animation: blob 2s infinite;
+          animation: blob 2s infinite;
 }
 
 .mix-blend-normal {
@@ -62397,6 +62438,11 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .sm\:animate-blob {
+    -webkit-animation: blob 2s infinite;
+            animation: blob 2s infinite;
+  }
+
   .sm\:mix-blend-normal {
     mix-blend-mode: normal;
   }
@@ -93506,6 +93552,11 @@ video {
   .md\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .md\:animate-blob {
+    -webkit-animation: blob 2s infinite;
+            animation: blob 2s infinite;
   }
 
   .md\:mix-blend-normal {
@@ -124619,6 +124670,11 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .lg\:animate-blob {
+    -webkit-animation: blob 2s infinite;
+            animation: blob 2s infinite;
+  }
+
   .lg\:mix-blend-normal {
     mix-blend-mode: normal;
   }
@@ -155730,6 +155786,11 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .xl\:animate-blob {
+    -webkit-animation: blob 2s infinite;
+            animation: blob 2s infinite;
+  }
+
   .xl\:mix-blend-normal {
     mix-blend-mode: normal;
   }
@@ -186839,6 +186900,11 @@ video {
   .\32xl\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .\32xl\:animate-blob {
+    -webkit-animation: blob 2s infinite;
+            animation: blob 2s infinite;
   }
 
   .\32xl\:mix-blend-normal {
