@@ -31172,37 +31172,37 @@ video {
 
 @-webkit-keyframes blob {
   0% {
-    transform: scale(1);
+    transform: translate(0px, 0px) scale(1);
   }
 
   33% {
-    transform: scale(1.1);
+    transform: translate(30px, -50px) scale(1.1);
   }
 
   66% {
-    transform: scale(0.9);
+    transform: translate(-20px, 20px) scale(0.9);
   }
 
   100% {
-    transform: scale(1);
+    transform: translate(0px, 0px) scale(1);
   }
 }
 
 @keyframes blob {
   0% {
-    transform: scale(1);
+    transform: translate(0px, 0px) scale(1);
   }
 
   33% {
-    transform: scale(1.1);
+    transform: translate(30px, -50px) scale(1.1);
   }
 
   66% {
-    transform: scale(0.9);
+    transform: translate(-20px, 20px) scale(0.9);
   }
 
   100% {
-    transform: scale(1);
+    transform: translate(0px, 0px) scale(1);
   }
 }
 
@@ -31232,8 +31232,8 @@ video {
 }
 
 .animate-blob {
-  -webkit-animation: blob 2s infinite;
-          animation: blob 2s infinite;
+  -webkit-animation: blob 7s infinite;
+          animation: blob 7s infinite;
 }
 
 .mix-blend-normal {
@@ -31870,6 +31870,16 @@ video {
 
 .backdrop-sepia {
   --tw-backdrop-sepia: sepia(100%);
+}
+
+.animation-delay-2000 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 @media (min-width: 640px) {
@@ -62439,8 +62449,8 @@ video {
   }
 
   .sm\:animate-blob {
-    -webkit-animation: blob 2s infinite;
-            animation: blob 2s infinite;
+    -webkit-animation: blob 7s infinite;
+            animation: blob 7s infinite;
   }
 
   .sm\:mix-blend-normal {
@@ -93555,8 +93565,8 @@ video {
   }
 
   .md\:animate-blob {
-    -webkit-animation: blob 2s infinite;
-            animation: blob 2s infinite;
+    -webkit-animation: blob 7s infinite;
+            animation: blob 7s infinite;
   }
 
   .md\:mix-blend-normal {
@@ -124671,8 +124681,8 @@ video {
   }
 
   .lg\:animate-blob {
-    -webkit-animation: blob 2s infinite;
-            animation: blob 2s infinite;
+    -webkit-animation: blob 7s infinite;
+            animation: blob 7s infinite;
   }
 
   .lg\:mix-blend-normal {
@@ -155787,8 +155797,8 @@ video {
   }
 
   .xl\:animate-blob {
-    -webkit-animation: blob 2s infinite;
-            animation: blob 2s infinite;
+    -webkit-animation: blob 7s infinite;
+            animation: blob 7s infinite;
   }
 
   .xl\:mix-blend-normal {
@@ -186903,8 +186913,8 @@ video {
   }
 
   .\32xl\:animate-blob {
-    -webkit-animation: blob 2s infinite;
-            animation: blob 2s infinite;
+    -webkit-animation: blob 7s infinite;
+            animation: blob 7s infinite;
   }
 
   .\32xl\:mix-blend-normal {
