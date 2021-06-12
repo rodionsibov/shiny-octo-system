@@ -23,12 +23,14 @@
             </div>
 
             <div
-                class="relative bg-white mb-52 opacity-80 rounded-lg border border-gray-400 hover:bg-blue-50 py-3 px-4 transition duration-100">
+                class="relative bg-white mb-52 opacity-80 rounded-lg border border-gray-400 hover:bg-blue-50 pt-3 pb-2 px-4 transition duration-100">
                 <div class="flex justify-between">
                     <div class="flex gap-2 items-center">
-                        <div class="w-12 h-12">
-                            <img id="avatar" class="rounded-full border-2 border-blue-800 object-cover" src="" alt="">
-                        </div>
+                        <a href="" class="w-12 h-12">
+                            <img id="avatar"
+                                class="rounded-full border-2 border-blue-800 object-cover hover:opacity-80 transition duration-100"
+                                src="" alt="">
+                        </a>
                         <a href="#">
                             <div id="name" class="font-bold hover:underline"></div>
                             <div id="email" class="text-gray-500 text-sm"></div>
@@ -49,7 +51,7 @@
                 <div class="text-gray-500 text-sm flex justify-between items-center pb-1 border-b border-gray-400 mt-2">
                     <a id="date" href="" class="hover:underline"></a>
                     <a href=""
-                        class="hover:text-blue-500 transition duration-200 rounded-full hover:bg-blue-100 p-1 hover:opacity-100">
+                        class="hover:text-blue-500 transition duration-100 rounded-full hover:bg-blue-100 p-1 hover:opacity-100">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -57,31 +59,39 @@
                         </svg>
                     </a>
                 </div>
-                <div class="flex gap-6 mt-2 text-sm text-gray-500">
-                    <div class="flex gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                        </svg>
-                        <span id="heart"></span>
-                    </div>
-                    <div class="flex gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                        </svg>
-                        <span id="chat"></span>
-                    </div>
-                    <div class="flex gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-                        </svg>
-                        Share this Tweet
-                    </div>
+                <div class="flex items-center gap-4 mt-2 text-sm text-gray-500">
+                    <a href="" class="flex items-center gap-1 hover:opacity-100">
+                        <div class="hover:text-red-500 transition duration-200 rounded-full hover:bg-red-100 p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <span class="hover:text-red-500 transition duration-200 hover:underline" id="heart"></span>
+                    </a>
+                    <a href="" class="flex items-center gap-1 hover:opacity-100">
+                        <div class="hover:text-blue-500 transition duration-200 rounded-full hover:bg-blue-100 p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                        </div>
+                        <span class="hover:text-blue-500 transition duration-200 hover:underline" id="chat"></span>
+                    </a>
+                    <a href="" class="flex items-center gap-1 hover:opacity-100">
+                        <div class="hover:text-green-500 transition duration-200 rounded-full hover:bg-green-100 p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                            </svg>
+                        </div>
+                        <span class="hover:text-green-500 transition duration-200 hover:underline">
+                            Share this Tweet
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -95,7 +105,7 @@
             console.log(data);
             data.sort(() => Math.random() - 0.5)
             document.querySelector('#name').textContent = `${data[0].first_name} ${data[0].last_name}`
-            document.querySelector('#email').textContent = `${data[0].email}`
+            document.querySelector('#email').textContent = `@${data[0].email.split('@')[0]}`
             document.querySelector('#avatar').src = `${data[0].avatar}`
             document.querySelector('#heart').textContent = `${Math.floor(Math.random() * 999)}`
             document.querySelector('#chat').textContent = `${Math.floor(Math.random() * 99)}`
