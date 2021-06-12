@@ -21,38 +21,92 @@
             <div
                 class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000">
             </div>
-            <div class="m-8 relative space-y-4">
-                <div class="p-5 bg-white rounded-lg flex items-center justify-between space-x-8 opacity-0">
-                    <div class="flex-1">
-                        <div class="h-4 w-48 bg-gray-300 rounded"></div>
+
+            <div
+                class="relative bg-white mb-52 opacity-80 rounded-lg border border-gray-400 hover:bg-blue-50 py-3 px-4 transition duration-100">
+                <div class="flex justify-between">
+                    <div class="flex gap-2 items-center">
+                        <div class="w-12 h-12">
+                            <img id="avatar" class="rounded-full border-2 border-blue-800 object-cover" src="" alt="">
+                        </div>
+                        <a href="#">
+                            <div id="name" class="font-bold hover:underline"></div>
+                            <div id="email" class="text-gray-500 text-sm"></div>
+                        </a>
                     </div>
-                    <div>
-                        <div class="w-24 h-6 rounded-lg bg-purple-300"></div>
-                    </div>
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor" style="color: #1da1f2">
+                            <path
+                                d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z">
+                            </path>
+                        </svg>
+                    </a>
                 </div>
-            </div>
-            <div class="m-8 relative space-y-4">
-                <div class="p-5 bg-white rounded-lg flex items-center justify-between space-x-8 opacity-0">
-                    <div class="flex-1">
-                        <div class="h-4 w-64 bg-gray-300 rounded"></div>
-                    </div>
-                    <div>
-                        <div class="w-16 h-6 rounded-lg bg-yellow-300"></div>
-                    </div>
+                <div class="mt-4 text-xl space-y-4">
+                    <p>Say it with me:</p>
+                    <p>"One day I'm going to be a successful freelancer."</p>
                 </div>
-            </div>
-            <div class="m-8 relative space-y-4">
-                <div class="p-5 bg-white rounded-lg flex items-center justify-between space-x-8 opacity-0">
-                    <div class="flex-1">
-                        <div class="h-4 w-44 bg-gray-300 rounded"></div>
+                <div class="text-gray-500 text-sm flex justify-between items-center pb-1 border-b border-gray-400 mt-2">
+                    <a id="date" href="" class="hover:underline"></a>
+                    <a href=""
+                        class="hover:text-blue-500 transition duration-200 rounded-full hover:bg-blue-100 p-1 hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex gap-6 mt-2 text-sm text-gray-500">
+                    <div class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        <span id="heart"></span>
                     </div>
-                    <div>
-                        <div class="w-40 h-6 rounded-lg bg-pink-300"></div>
+                    <div class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                        <span id="chat"></span>
+                    </div>
+                    <div class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                        </svg>
+                        Share this Tweet
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script>
+    async function fetchData() {
+        try {
+            const res = await fetch('https://reqres.in/api/users')
+            const { data } = await res.json()
+            console.log(data);
+            data.sort(() => Math.random() - 0.5)
+            document.querySelector('#name').textContent = `${data[0].first_name} ${data[0].last_name}`
+            document.querySelector('#email').textContent = `${data[0].email}`
+            document.querySelector('#avatar').src = `${data[0].avatar}`
+            document.querySelector('#heart').textContent = `${Math.floor(Math.random() * 999)}`
+            document.querySelector('#chat').textContent = `${Math.floor(Math.random() * 99)}`
+            document.querySelector('#date').innerHTML = `${new Date().toLocaleTimeString()} &bull; ${new Date().toDateString()}`
+
+        } catch (error) {
+            console.log(error);
+        }
+
+    }
+    fetchData()
+</script>
 
 </html>
