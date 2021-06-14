@@ -9,7 +9,7 @@ async function fetchData() {
         document.querySelector('#avatar').src = `${data[0].avatar}`
         document.querySelector('#heart').textContent = `${Math.floor(Math.random() * 999)}`
         document.querySelector('#chat').textContent = `${Math.floor(Math.random() * 99)}`
-        document.querySelector('#date').innerHTML = `${new Date().toLocaleTimeString()} &bull; ${new Date().toDateString()}`
+        document.querySelector('#date').innerHTML = `${new Date().toLocaleTimeString().replace(/(.*)\D\d+/, '$1')} &bull; ${new Date().toDateString()}`
 
     } catch (error) {
         console.log(error);
